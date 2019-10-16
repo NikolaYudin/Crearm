@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Crearm
@@ -23,6 +24,12 @@ namespace Crearm
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+                // добавляем сборку через webpack
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                {
+                    HotModuleReplacement = true
+                });
             }
 
             app.Run(async (context) =>

@@ -6,6 +6,11 @@
                  <input [(ngModel)]="name" placeholder="name">
                  <h2>Добро пожаловать {{name}}!</h2>`
 })
+
+@Component({
+    selector: 'header',
+    template: `<div>Menu</div>`
+})
 export class AppComponent {
     name = '';
 }

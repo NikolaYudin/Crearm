@@ -7,15 +7,52 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './header/login/login.component';
+import { HomeComponent } from './content/home/home.component';
+import { WikiComponent } from './content/wiki/wiki.component';
+import { LkComponent } from './content/lk/lk.component';
+import { UserComponent } from './content/lk/user/user.component';
+var appRoutes = [
+    { path: '', component: HomeComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'wiki', component: WikiComponent },
+    { path: 'lk', component: LkComponent },
+    { path: 'user', component: UserComponent },
+];
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         NgModule({
-            imports: [BrowserModule, FormsModule],
-            declarations: [AppComponent],
-            bootstrap: [AppComponent]
+            imports: [
+                BrowserModule,
+                FormsModule,
+                RouterModule.forRoot(appRoutes)
+            ],
+            declarations: [
+                AppComponent,
+                HeaderComponent,
+                FooterComponent,
+                LoginComponent,
+                HomeComponent,
+                WikiComponent,
+                LkComponent,
+                UserComponent
+            ],
+            bootstrap: [
+                AppComponent,
+                HeaderComponent,
+                FooterComponent,
+                LoginComponent,
+                HomeComponent,
+                WikiComponent,
+                LkComponent,
+                UserComponent
+            ]
         })
     ], AppModule);
     return AppModule;

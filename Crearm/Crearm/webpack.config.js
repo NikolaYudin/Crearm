@@ -11,6 +11,9 @@ module.exports = {
         publicPath: '/dist/',
         filename: "[name].js"       // название создаваемого файла
     },
+    devServer: {
+        historyApiFallback: true,
+    },
     resolve: {
         extensions: ['.ts', '.js']
     },

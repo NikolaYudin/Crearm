@@ -1,18 +1,12 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { LoginComponent } from './header/login/login.component';
-import { HomeComponent } from './content/home/home.component';
-import { WikiComponent } from './content/wiki/wiki.component';
 
-const appRoutes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'wiki', component: WikiComponent },
+const lkRoutes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(appRoutes)],
+    imports: [RouterModule.forChild(lkRoutes)],
     exports: [RouterModule]
 })
 
-export class AppRoutingModule { }
+export class LkRoutingModule { }

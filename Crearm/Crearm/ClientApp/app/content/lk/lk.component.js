@@ -5,16 +5,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component } from '@angular/core';
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+var LKComponent = /** @class */ (function () {
+    function LKComponent() {
     }
-    AppComponent = __decorate([
+    LKComponent = __decorate([
         Component({
-            selector: 'app',
-            templateUrl: './app.component.html'
+            selector: 'lk',
+            templateUrl: './lk.component.html'
         })
-    ], AppComponent);
-    return AppComponent;
+    ], LKComponent);
+    return LKComponent;
 }());
-export { AppComponent };
-//# sourceMappingURL=app.component.js.map
+export { LKComponent };
+//# sourceMappingURL=lk.component.js.map

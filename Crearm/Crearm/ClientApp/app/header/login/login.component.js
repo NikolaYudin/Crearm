@@ -10,7 +10,7 @@ var LoginComponent = /** @class */ (function () {
     }
     LoginComponent = __decorate([
         Component({
-            selector: 'app-login',
+            selector: 'header-login',
             templateUrl: './login.component.html'
         })
     ], LoginComponent);

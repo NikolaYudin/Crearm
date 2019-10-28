@@ -5,5 +5,5 @@
     templateUrl: './lk.component.html'
 })
 
-export class AppComponent {
+export class LKComponent {
 }

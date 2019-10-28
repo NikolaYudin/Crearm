@@ -7,18 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './header/login/login.component';
 import { HomeComponent } from './content/home/home.component';
 import { WikiComponent } from './content/wiki/wiki.component';
-var appRoutes = [
-    { path: '', component: HomeComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'wiki', component: WikiComponent },
-];
+import { LKComponent } from './content/lk/lk.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.roting';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -27,7 +24,8 @@ var AppModule = /** @class */ (function () {
             imports: [
                 BrowserModule,
                 FormsModule,
-                RouterModule.forRoot(appRoutes)
+                RouterModule,
+                AppRoutingModule
             ],
             declarations: [
                 AppComponent,
@@ -36,6 +34,7 @@ var AppModule = /** @class */ (function () {
                 LoginComponent,
                 HomeComponent,
                 WikiComponent,
+                LKComponent
             ],
             bootstrap: [
                 AppComponent,
@@ -44,6 +43,7 @@ var AppModule = /** @class */ (function () {
                 LoginComponent,
                 HomeComponent,
                 WikiComponent,
+                LKComponent
             ]
         })
     ], AppModule);

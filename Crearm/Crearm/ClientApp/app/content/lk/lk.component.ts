@@ -1,9 +1,9 @@
 ﻿import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-lk',
+    selector: 'lk',
     templateUrl: './lk.component.html'
 })
 
-export class LkComponent {
+export class AppComponent {
 }

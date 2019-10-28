@@ -14,13 +14,9 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
   </PropertyGroup>
+  <ItemGroup />
   <ItemGroup>
-    <TypeScriptCompile Update="ClientApp\app\content\lk\user\user.service.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Update="ClientApp\app\content\lk\user\user.ts">
+    <TypeScriptCompile Update="ClientApp\app\app.roting.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

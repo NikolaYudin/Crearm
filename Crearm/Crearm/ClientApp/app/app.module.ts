@@ -1,30 +1,22 @@
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './header/login/login.component';
 import { HomeComponent } from './content/home/home.component';
 import { WikiComponent } from './content/wiki/wiki.component';
-import { LkComponent } from './content/lk/lk.component';
-import { UserComponent } from './content/lk/user/user.component';
-
-const appRoutes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'wiki', component: WikiComponent },
-    { path: 'lk', component: LkComponent },
-    { path: 'user', component: UserComponent },
-];
+import { LKComponent } from './content/lk/lk.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.roting';
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
-        RouterModule.forRoot(appRoutes)
+        RouterModule,
+        AppRoutingModule
     ],
     declarations: [
         AppComponent,
@@ -33,8 +25,7 @@ const appRoutes: Routes = [
         LoginComponent,
         HomeComponent,
         WikiComponent,
-        LkComponent,
-        UserComponent
+        LKComponent
     ],
     bootstrap: [
         AppComponent,
@@ -43,8 +34,7 @@ const appRoutes: Routes = [
         LoginComponent,
         HomeComponent,
         WikiComponent,
-        LkComponent,
-        UserComponent
+        LKComponent
     ]
 })
 

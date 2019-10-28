@@ -14,14 +14,10 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './header/login/login.component';
 import { HomeComponent } from './content/home/home.component';
 import { WikiComponent } from './content/wiki/wiki.component';
-import { LkComponent } from './content/lk/lk.component';
-import { UserComponent } from './content/lk/user/user.component';
 var appRoutes = [
     { path: '', component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'wiki', component: WikiComponent },
-    { path: 'lk', component: LkComponent },
-    { path: 'user', component: UserComponent },
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -40,8 +36,6 @@ var AppModule = /** @class */ (function () {
                 LoginComponent,
                 HomeComponent,
                 WikiComponent,
-                LkComponent,
-                UserComponent
             ],
             bootstrap: [
                 AppComponent,
@@ -50,8 +44,6 @@ var AppModule = /** @class */ (function () {
                 LoginComponent,
                 HomeComponent,
                 WikiComponent,
-                LkComponent,
-                UserComponent
             ]
         })
     ], AppModule);

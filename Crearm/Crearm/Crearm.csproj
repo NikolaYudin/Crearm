@@ -8,11 +8,12 @@
   <ItemGroup>
     <None Remove="ClientApp\app\app.component.ts" />
     <None Remove="ClientApp\app\app.module.ts" />
+    <None Remove="ClientApp\app\app.roting.ts" />
     <None Remove="ClientApp\app\app.service.ts" />
     <None Remove="ClientApp\app\content\home\home.component.ts" />
     <None Remove="ClientApp\app\content\lk\lk.component.ts" />
-    <None Remove="ClientApp\app\content\lk\user\app.module.ts" />
-    <None Remove="ClientApp\app\content\lk\user\user.component.ts" />
+    <None Remove="ClientApp\app\content\lk\lk.module.ts" />
+    <None Remove="ClientApp\app\content\lk\lk.roting.ts" />
     <None Remove="ClientApp\app\content\wiki\wiki.component.ts" />
     <None Remove="ClientApp\app\footer\footer.component.ts" />
     <None Remove="ClientApp\app\header\header.component.ts" />
@@ -36,6 +37,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="Node.js" Version="5.3.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Update="ClientApp\app\content\lk\lk.roting.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
 
 </Project>

@@ -1,30 +1,39 @@
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
 
-import { LkComponent } from './lk.component';
-import { UserComponent } from './user/user.component';
-
-const lkRoutes: Routes = [
-    { path: 'lk', component: LkComponent },
-    { path: 'user', component: UserComponent },
-];
+import { AppComponent } from './lk.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './header/login/login.component';
+import { HomeComponent } from './content/home/home.component';
+import { WikiComponent } from './content/wiki/wiki.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './lk.roting';
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
-        RouterModule.forRoot(lkRoutes)
+        RouterModule,
+        AppRoutingModule
     ],
     declarations: [
-        LkComponent,
-        UserComponent
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        LoginComponent,
+        HomeComponent,
+        WikiComponent,
     ],
     bootstrap: [
-        LkComponent,
-        UserComponent
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        LoginComponent,
+        HomeComponent,
+        WikiComponent,
     ]
 })
 
-export class LkModule { }
+export class AppModule { }
